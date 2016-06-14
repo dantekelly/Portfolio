@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dantekelly/Portfolio.git"
+  },
+  "author": "Dante Kelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dantekelly/Portfolio/issues"
+  },
+  "homepage": "https://github.com/dantekelly/Portfolio#readme",
+  "dependencies": {
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "run-sequence": "^1.2.1"
+  }
+}
