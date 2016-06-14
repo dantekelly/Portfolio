@@ -1,0 +1,29 @@
+html {
+  background-color: #e0e0e0; }
+
+h1, h2 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center; }
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2.25em; }
+
+h2 {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 0.42; }
+
+.work {
+  text-align: center;
+  font-size: 0;
+  margin: 100px auto;
+  width: 100%; }
+  .work .tile {
+    width: 33.33%;
+    height: auto;
+    display: inline-block; }
+    .work .tile img {
+      width: 100%;
+      height: auto; }
