@@ -13,13 +13,17 @@
     <!-- Title -->
     <title> Dante Kelly - Web Developer in San Bernardino </title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800" rel="stylesheet"
-          type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800" rel="stylesheet" type="text/css">
     <!-- Styles -->
     <link rel="stylesheet" href="styles/dist/normalize.min.css">
     <link rel="stylesheet" href="styles/dist/main.min.css">
+    <link rel="stylesheet" href="styles/dist/animation.min.css">
     <!-- JavaScript Frameworks -->
-
+    <script src="scripts/dist/jquery-3.0.0.min.js"></script>
+    <!-- Captcha Integration -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!-- Google Analytics Integraton -->
+    <script src="scripts/dist/google-analytics.min.js"></script>
   </head>
   <body>
     <header>
@@ -49,17 +53,22 @@
         -->
       </div>
       <div class="contact_form">
-        <h2> Contact Me </h2>
-        <h3> Have a project for me? </h3>
-        <form action="submit_query.php">
-          <label for="email_form"> Email </label>
-          <input id="email_form" placeholder="Email@gmail.com">
-          <label for="name_form"> Name </label>
-          <input id="name_form" placeholder="Name">
-          <label for="organization_form"> Organization </label>
-          <textarea id="organization_form" placeholder="Kevin Bacon Inc"> </textarea>
-          <input type="submit">
-        </form>
+        <a href="#contact_inside"> Contact Me </a>
+        <div class="hidden">
+          <h3> Have a project for me? </h3>
+          <form id="contact_inside" method="post" action="contact_form.php">
+            <label for="name_form"> Name </label>
+            <input id="name_form" name="name" placeholder="Name" required>
+            <label for="email_form"> Email </label>
+            <input id="email_form" name="email" placeholder="Email@gmail.com" required>
+            <label for="organization_form"> Organization (if applicable)</label>
+            <input id="organization_form" placeholder="Organization LLC"> </input>
+            <label for="message_form"> Message </label>
+            <textarea id="message_form" name="message" placeholder="Hey Dante, I'm the CEO of the new company Luxury Printing LLC and I need a eCommerce website that will showcase our designs. I love how screenprinting.com looks and I would love a similar desing personalised for my company. My budget is $XXXX-$XXXX depending on how effective the design is. Thank-you." required> </textarea>
+            <div class="g-recaptcha" data-sitekey="6LfLpCITAAAAAJgXIl8lk8d4fs992ABXhJHbOqpj"></div>
+            <input type="submit" value="Request a Quote">
+          </form>
+        </div>
       </div>
     </section>
     <!-- JavaScript Files -->
