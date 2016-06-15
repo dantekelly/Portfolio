@@ -12,7 +12,7 @@ gulp.task('clean-dist', function () {
         .pipe(clean());
 });
 
-gulp.task('imagemin', function() {
+gulp.task('imagemin', function () {
     return gulp.src('./media/*')
         .pipe(imagemin())
         .pipe(gulp.dest('./media/dist'));
@@ -37,7 +37,7 @@ gulp.task('minify-css', function () {
         .pipe(gulp.dest('./styles/dist'));
 });
 
-gulp.task('default', function(done) {
+gulp.task('default', function (done) {
     runSequence('clean-dist', 'sass', 'minify-css', function () {
         console.log('Run something else');
         done();
